@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/o.g_vlad/lab2.3/main.c
+stdlib.h
+-
+stdio.h
+-
+gtk/gtk.h
+-
+cairo.h
+-
+math.h
+-
+matrix.h
+/Users/o.g_vlad/lab2.3/matrix.h
+
+/Users/o.g_vlad/lab2.3/matrix.c
+stdlib.h
+-
+stdio.h
+-
+
+/Users/o.g_vlad/lab2.3/matrix.h
+
