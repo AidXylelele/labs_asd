@@ -240,13 +240,12 @@ void draw_connections(cairo_t *cr, node_pos_t *positions, double **matrix) {
                 if (i < j || j < start_index) {
                     connect_nodes(cr, positions[i], positions[j], 1);
                     if (j < end_index && j >= start_index) {
-                        //виключаємо малювання зв'язків при відображенні зв'язків одної вершини
                         connect_nodes(cr, positions[j], positions[i], -1);
                     }
                 }
             } else if (directed || i <= j) {
                 connect_nodes(cr, positions[i], positions[j],
-                              j == (NODE_COUNT - 1) && !directed ? 1 : 0); //якщо ми з'єднуємо вершину з серединною, то малюємо зігнуту лінію
+                              j == (NODE_COUNT - 1) && !directed ? 1 : 0);
             }
         }
     }
