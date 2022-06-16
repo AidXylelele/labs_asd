@@ -266,7 +266,7 @@ void draw_nodes(cairo_t *cr, node_pos_t *positions) {
 }
 
 void draw_graph(cairo_t *cr, double **matrix, node_pos_t *positions) {
-    cairo_set_source_rgb(cr, 0.117, 0.631, 0.760);
+    cairo_set_source_rgb(cr, 1, 0, 0);
     draw_nodes(cr, positions);
     draw_connections(cr, positions, matrix);
     free(positions);
